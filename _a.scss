@@ -1,0 +1,11 @@
+$color:#2B3035;
+$colorFondo:#000000;
+$relleno: 20px;
+$colorLetra:#ffffff;
+@mixin theme($theme:$colorFondo) {
+  background: $theme;
+  color:$colorLetra;
+  border-radius: 5px;
+  padding: $relleno;
+  font-family: diablo;
+}

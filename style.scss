@@ -1,0 +1,62 @@
+@import "a";
+body {
+  background-color: #ec0000;
+  color: white;
+}
+.grid-container {
+  padding: 0;
+  margin: 0;
+  background-color: #343A40;
+}
+.container {
+  margin-top: 5%;
+}
+
+/* Estilos para el formulario de ingreso de datos */
+.form-control {
+  background-color: #343A40;
+  color: white;
+  border: 1px solid #4B545C;
+}
+
+/* Estilos para la tabla de estudiantes */
+table {
+  background-color: #343A40;
+}
+
+.table-success {
+  background-color: #28A745;
+  color: white;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #4B545C;
+}
+
+/* Estilos para los botones */
+.btn-primary {
+  background-color: #007BFF;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15b300;
+}
+
+.btn-danger {
+  background-color: #DC3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #BD2130;
+}
+
+.btn-info {
+  background-color: #17A2B8;
+  color: white;
+}
+
+.btn-info:hover {
+  background-color: #138496;
+}

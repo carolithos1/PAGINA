@@ -1,0 +1,531 @@
+@charset "UTF-8";
+/* Importaciones */
+@import "style1.css";
+/* Variables */
+/* Grid Container */
+.grid-container {
+  font-size: 16px;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  font-family: diablo;
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+}
+
+/* Header */
+header {
+  background-color: black;
+}
+
+/* Fuentes */
+@font-face {
+  font-family: diablo;
+  src: url(fuentes/diablo.ttf);
+}
+.grid-container > * {
+  background: #2B3035;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  font-family: diablo;
+}
+
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabecera */
+header {
+  grid-column: 1/span 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Banner */
+.banner {
+  max-width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Estilos para el fondo con el GIF */
+.banner > div {
+  background-image: url("videos/Diablo IV - Gameplay Launch Trailer _ PS5 & PS4 Games.gif");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* Estilos para la superposición de contenido */
+.banner-img-overlay {
+  position: relative;
+}
+
+/* Estilos para el título y el texto */
+.card-title img {
+  width: 500px;
+}
+
+.logo img {
+  width: 100px; /* Ajusta el ancho de los logos */
+}
+
+/* Formulario */
+article {
+  grid-column: 2;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+article form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px; /* Ajusta el ancho máximo del formulario según sea necesario */
+  width: 100%; /* Asegura que el formulario ocupe el 100% del ancho máximo */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+.form-group {
+  width: 48%; /* Ajusta el ancho de las columnas según sea necesario */
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: inline-block;
+  width: 100%; /* Ajusta el ancho de las etiquetas */
+  text-align: left; /* Alinea las etiquetas a la izquierda */
+  font-weight: bold;
+  margin-bottom: 5px; /* Ajusta el margen inferior de las etiquetas */
+}
+
+.form-group input[type=text],
+.form-group input[type=email],
+.form-group input[type=password],
+.form-group input[type=date],
+.form-group input[type=number],
+.form-group textarea,
+.form-group input[type=checkbox],
+.form-group input[type=radio],
+.form-group select {
+  width: 100%; /* Hacer que los campos de entrada ocupen el ancho completo */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+form input[type=submit],
+#registrarButton,
+#registrarBoton {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+form input[type=submit]:hover,
+#registrarButton:hover,
+#registrarBoton:hover {
+  background-color: #3b0000;
+}
+
+.content {
+  margin-left: 0; /* Ajusta el margen izquierdo a 0 */
+  padding: 20px;
+}
+
+/* Article (Secciones) */
+.cuadros-container {
+  grid-column: 1/span 3;
+}
+
+.noticias-container {
+  text-align: center;
+  padding: 20px;
+  grid-column: 1/span 3; /* Ocupa la segunda columna */
+  grid-row: 1; /* Coloca noticias en la primera fila */
+}
+
+.personajes-container {
+  text-align: center;
+  padding: 20px;
+  grid-column: 1/span 3; /* Ocupa la segunda columna */
+  grid-row: 2; /* Coloca personajes en la segunda fila */
+}
+
+.builds-container {
+  text-align: center;
+  padding: 20px;
+  grid-column: 1/span 3; /* Ocupa la segunda columna */
+  grid-row: 3; /* Coloca builds en la tercera fila */
+}
+
+.youtube-container {
+  text-align: center;
+  padding: 20px;
+  grid-column: 1/span 3; /* Ocupa la segunda columna */
+  grid-row: 4; /* Coloca youtube en la cuarta fila */
+}
+
+.forma {
+  border: 50%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cuadro {
+  margin: 0 10px;
+  background-color: rgba(31, 30, 30, 0);
+}
+
+.cuadro img {
+  max-width: 500px;
+  height: auto;
+}
+
+iframe {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  grid-column: 1/span 3;
+  background-color: #333; /* Color de fondo del pie de página */
+  color: #fff; /* Color del texto en el pie de página */
+  padding: 20px;
+}
+
+.footer-col ul li a {
+  color: #fff; /* Cambia el color de los enlaces */
+  text-decoration: none; /* Elimina la subraya predeterminada */
+  transition: color 0.3s; /* Agrega una transición suave al cambio de color */
+}
+
+.footer-col ul li a:hover {
+  color: #ff0000; /* Cambia el color al pasar el mouse sobre los enlaces */
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex: 1; /* Distribuye el espacio de manera uniforme entre las columnas */
+  margin-right: 20px; /* Espaciado entre las columnas */
+}
+
+/* Estilo del copyright */
+.copyright {
+  text-align: center;
+  margin-top: 2px;
+  grid-column: 1/span 3;
+}
+
+/* Tarjeta */
+.cartao {
+  overflow: visible;
+  width: 190px;
+  height: 254px;
+}
+
+/* Contenido de la tarjeta */
+.conteudo {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.9333333333);
+  border-radius: 5px;
+}
+
+/* Parte frontal y trasera de la tarjeta */
+.frenteira,
+.traseira {
+  background-color: #151515;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.traseira {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.traseira::before {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(90deg, transparent, #8b80f9, #8b80f9, #8b80f9, #8b80f9, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+/* Contenido de la parte trasera de la tarjeta */
+.traseira-conteudo {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #151515;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.traseira-conteudo img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Animación de rotación de la tarjeta al pasar el cursor */
+.cartao:hover .conteudo {
+  transform: rotateY(180deg);
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+/* Parte frontal de la tarjeta */
+.frenteira {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.frenteira .frenteira-conteudo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.frenteira-conteudo .distintivo {
+  background-color: rgba(0, 0, 0, 0.3333333333);
+  padding: 2px 10px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.descricao {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5333333333);
+  width: 100%;
+  height: 10000px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+.titulo {
+  font-size: 11px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartao-rodape {
+  color: rgba(255, 255, 255, 0.5333333333);
+  margin-top: 5px;
+  font-size: 8px;
+}
+
+/* Parte frontal de la tarjeta - Imagen */
+.frenteira .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* Animación de los círculos flotantes en el pie de página */
+.circulos__dancante {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #8b80f9;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+
+#rodape {
+  background-color: #efefef;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+#direita {
+  background-color: #27c93f;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* Parte frontal de la tarjeta */
+.frenteira {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.frenteira .frenteira-conteudo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.frenteira-conteudo .distintivo {
+  background-color: rgba(0, 0, 0, 0.3333333333);
+  padding: 2px 10px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.descricao {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5333333333);
+  width: 100%;
+  height: 10000px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+.titulo {
+  font-size: 11px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartao-rodape {
+  color: rgba(255, 255, 255, 0.5333333333);
+  margin-top: 5px;
+  font-size: 8px;
+}
+
+/* Parte frontal de la tarjeta - Imagen */
+.frenteira .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* Animación de los círculos flotantes en el pie de página */
+.circulos__dancante {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #8b80f9;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+
+#rodape {
+  background-color: #efefef;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+#direita {
+  background-color: #27c93f;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}/*# sourceMappingURL=estilos.css.map */
